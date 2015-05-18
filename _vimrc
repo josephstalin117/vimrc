@@ -11,7 +11,7 @@ endif
 " 256 color theme molokai
 if has('unix')
     set t_Co=256
-    colorscheme molokai
+"    colorscheme molokai
     hi Normal  ctermbg=none
 elseif has('win32')
     colorscheme desert
