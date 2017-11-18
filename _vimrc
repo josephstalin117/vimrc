@@ -1,8 +1,10 @@
 set nocompatible  " Use Vim defaults instead of 100% vi compatibility
 
-if has("syntax")
-    syntax on
-endif
+syntax on
+set background=dark
+set showmatch
+
+set mouse=a
 
 if has("autocmd")
     filetype plugin indent on
