@@ -2,13 +2,15 @@ set nocompatible  " Use Vim defaults instead of 100% vi compatibility
 
 syntax on
 set background=dark
-set showmatch
 
 set mouse=a
 
 if has("autocmd")
     filetype plugin indent on
 endif
+
+" Parentheses Match
+hi MatchParen ctermbg=DarkRed guibg=lightblue
 
 " 256 color theme molokai
 if has('unix')
