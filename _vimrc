@@ -2,6 +2,7 @@ set nocompatible  " Use Vim defaults instead of 100% vi compatibility
 
 syntax on
 set background=dark
+set guifont=Monaco:h14
 
 set mouse=a
 
