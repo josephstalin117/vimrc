@@ -31,12 +31,12 @@ if has('mouse')
 endif
 
 " cut, copy
-vnoremap <C-x> "+x
-vnoremap <C-c> "+y
+"vnoremap <C-x> "+x
+"vnoremap <C-c> "+y
 " paste in normal/insert/command mode
-map <C-v> "+gP
-imap <C-v> <C-R>+
-cmap <C-v> <C-R>+
+"map <C-v> "+gP
+"imap <C-v> <C-R>+
+"cmap <C-v> <C-R>+
 
 
 " infomative status line
@@ -59,6 +59,10 @@ set softtabstop=4 " 1. space deleted when typing <BackSpace>
 " show tabs
 set listchars=tab:>.
 set list
+" search
+"set hlsearch
+"set incsearch
+
 
 " -------------- ctags ----------------
 if has('win32')
@@ -105,3 +109,4 @@ elseif has('win32')
 endif
 
 autocmd filetype make set noexpandtab
+
