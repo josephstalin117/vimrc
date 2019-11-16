@@ -121,5 +121,6 @@ call plug#end()
 
 map <F3> :NERDTreeToggle<CR>
 map <F4> :new term://bash<CR>
+map <F6> :bn<CR>
 
 
