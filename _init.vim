@@ -8,25 +8,17 @@ map k gk
 
 set mouse=a
 
-if has("autocmd")
-    filetype plugin indent on
-endif
-
-" Parentheses Match
-" hi MatchParen ctermbg=DarkRed guibg=lightblue
-" hi MatchParen cterm=none ctermbg=green guibg=blue
-
 " 256 color theme molokai
 if has('unix')
     set t_Co=256
     hi Normal  ctermbg=none
 elseif has('win32')
-    "colorscheme desert
+    colorscheme desert
 endif
 
 set nu
-set history=50      " keep 50 lines of command line history
-
+" keep 50 lines of command line history
+set history=50
 " backspace and cursor keys wrap to previous/next line
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
@@ -124,6 +116,6 @@ map <F6> :bn<CR>
 syntax on
 
 " Parentheses Match
-hi MatchParen cterm=none ctermbg=none guibg=blue
+hi MatchParen cterm=bold ctermbg=none ctermfg=blue
 hi Error NONE
 
